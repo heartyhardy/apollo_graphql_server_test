@@ -69,7 +69,7 @@ const resolvers = {
         books: () => books,
         bookById: (parent, { bookID }) => books.filter(book => book.id === bookID),
         bookByName: (parent, { bookName }) => books.find(book => book.title === bookName),
-        bookByFormat: (parent, { bookFormat }) => books.filter(book => book.format == bookFormat)
+        bookByFormat: (parent, { bookFormat }) => books.filter(book => book.format === bookFormat)
     },
 };
 
